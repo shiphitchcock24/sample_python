@@ -1,12 +1,19 @@
 language: python
-build_image: shippableimages/ubuntu1204_python
+#build_image: shippableimages/ubuntu1204_python
+
+env: 
+  - FOO=ree BAR=test
+  - REE=foo TEST=bar
+
 python:
   - 2.6
   - 2.7
   - 3.2
   - 3.3
   - 3.4
+  - 3.5
   - pypy
+  - pypy3
 
 install:
   - pip install -r requirements.txt
@@ -23,4 +30,4 @@ script:
 
 notifications:
   email:
-   - exampleone@org.com
+   - shiphitchcock1@gmail.com
