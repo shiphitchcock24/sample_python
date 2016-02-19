@@ -2,8 +2,6 @@ language: python
 #build_image: shippableimages/ubuntu1204_python
 
 env: 
-  #global:
-   # - FOO=ree BAR=test
   - REE=foo TEST=bar
   
 matrix:
@@ -13,11 +11,11 @@ matrix:
 python:
   - 2.6
   - 2.7
-  #- 3.2
+  - 3.2
   - 3.3
   - 3.4
   - 3.5
-  #- pypy
+  - pypy
   - pypy3
 
 install:
