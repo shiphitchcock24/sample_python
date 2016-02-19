@@ -2,8 +2,9 @@ language: python
 #build_image: shippableimages/ubuntu1204_python
 
 env: 
-  - FOO=ree BAR=test
-  - REE=foo TEST=bar
+  global:
+    - FOO=ree BAR=test
+    - REE=foo TEST=bar
 
 python:
   - 2.6
@@ -27,6 +28,10 @@ script:
   - which python
   - coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
   - coverage xml -o shippable/codecoverage/coverage.xml
+  - echo "$FOO"
+  - echo "$BAR"
+  - echo "$REE"
+  - echo "$TEST"
 
 notifications:
   email:
