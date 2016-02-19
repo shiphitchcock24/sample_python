@@ -2,9 +2,9 @@ language: python
 #build_image: shippableimages/ubuntu1204_python
 
 env: 
-  global:
-    - FOO=ree BAR=test
-    - REE=foo TEST=bar
+  #global:
+   # - FOO=ree BAR=test
+  - REE=foo TEST=bar
 
 python:
   - 2.6
