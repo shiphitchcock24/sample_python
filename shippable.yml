@@ -5,6 +5,13 @@ env:
   #global:
    # - FOO=ree BAR=test
   - REE=foo TEST=bar
+  
+matrix:
+  include:
+    - python: 3.4
+      env: FOO=ree BAR=test
+  exclude:
+    - python: 3.2
 
 python:
   - 2.6
