@@ -4,20 +4,20 @@ language: python
 env: 
   - REE=foo TEST=bar
   
-#matrix:
-#  include:
-  #  - python: 3.3
-    #  env: FOO=ree BAR=test
+matrix:
+  include:
+    - python: 3.3
+      env: FOO=ree BAR=test
 
 python:
   - 2.6
 #  - 2.7
  # - 3.2
-##  - 3.3
+  - 3.3
 #  - 3.4
-##  - 3.5
+  - 3.5
 #  - pypy
-##  - pypy3
+  - pypy3
 
 install:
   - pip install -r requirements.txt
