@@ -35,6 +35,7 @@ script:
   - echo "$BAR"
   - echo "$REE"
   - echo "$TEST"
+  - sleep 8m
 
 integrations:    
   notifications:
