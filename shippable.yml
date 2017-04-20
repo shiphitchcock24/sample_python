@@ -36,7 +36,15 @@ script:
   - echo "$REE"
   - echo "$TEST"
 
-notifications:
-  email:
-   - shiphitchcock1@gmail.com           
-  
+integrations:    
+  notifications:
+    - integrationName: email         
+      type: email        
+      recipients: 
+        - shiptest.rc.ow@gmail.com
+        - shiptest.rc.me@gmail.com
+      sendConsoleLogs : true
+      sendCoverageReports : true
+      on_start: always
+      on_success: always 
+      on_failure: always    
