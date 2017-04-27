@@ -35,7 +35,7 @@ script:
   - echo "$BAR"
   - echo "$REE"
   - echo "$TEST"
-  - cs ps
+ # - cs ps
  # - sleep 8m
 
 integrations:    
