@@ -34,7 +34,7 @@ script:
   - echo "$FOO"
   - echo "$BAR"
   - echo "$REE"
-  - echo "$TEST"
+  - echo "$TEST" 
  # - cs ps
  # - sleep 8m
 
